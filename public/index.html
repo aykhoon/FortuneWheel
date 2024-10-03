@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-box">
+            <h2 id="form-title">Login</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <button type="submit" id="auth-button">Login</button>
+            </form>
+            <p id="toggle-message">Don't have an account? <a href="#" id="toggle-link">Register</a></p>
+        </div>
+    </div>
+
+    <!-- Modal for pop-up messages -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
